@@ -31,7 +31,7 @@ public class MemoController {
 
     // Update
     @PutMapping("/api/memos/{id}")
-    public long updateMemo(@PathVariable long id, @RequestBody MemoRequestDto requestDto) {
+    public Long updateMemo(@PathVariable Long id, @RequestBody MemoRequestDto requestDto) {
         memoService.update(id, requestDto);
         return id;
     }
